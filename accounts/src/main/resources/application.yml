@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: accounts
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true  # Ativa o console web do H2
+      path: /h2-console  # Caminho para acessar o console do H2
+  jpa:
+    hibernate:
+      ddl-auto: update  # Cria ou atualiza as tabelas automaticamente
+    show-sql: true  # Exibe as queries SQL no console
+    database-platform: org.hibernate.dialect.H2Dialect
+
+# Ativando o perfil dev para usar o H2 em desenvolvimento
+#spring.profiles.active: dev
