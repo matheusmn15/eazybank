@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.eazybites</groupId>
 	<artifactId>loans</artifactId>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>loans</name>
 	<description>Project to manage loans in eazybank microservice</description>
@@ -82,6 +83,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<image>
+						<name>matheusmn15/${project.artifactId}:s4</name>
+					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

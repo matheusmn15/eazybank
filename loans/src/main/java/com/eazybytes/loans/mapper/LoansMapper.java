@@ -24,5 +24,4 @@ public class LoansMapper {
         loans.setOutstandingAmount(loansDto.getOutstandingAmount());
         return loans;
     }
-
 }

@@ -30,5 +30,4 @@ public interface ILoansService {
      * @return boolean indicating if the delete of loan details is successful or not
      */
     boolean deleteLoan(String mobileNumber);
-
 }
